@@ -15,6 +15,8 @@
 		8F6396FE1CA8FB76000D846C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F6396FC1CA8FB76000D846C /* LaunchScreen.storyboard */; };
 		8F6397091CA8FB76000D846C /* JSBridgeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6397081CA8FB76000D846C /* JSBridgeDemoTests.m */; };
 		8F6397141CA8FB76000D846C /* JSBridgeDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6397131CA8FB76000D846C /* JSBridgeDemoUITests.m */; };
+		8F6397221CA920F2000D846C /* ExampleApp.html in Resources */ = {isa = PBXBuildFile; fileRef = 8F6397211CA920F2000D846C /* ExampleApp.html */; };
+		DD1AB09FCD2FBD19BFADE254 /* libPods-JSBridgeDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB6F4FD99D50D042A85DF1C /* libPods-JSBridgeDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16328375C843FC9D7F57B2F3 /* Pods-JSBridgeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSBridgeDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSBridgeDemo/Pods-JSBridgeDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8F6396EB1CA8FB76000D846C /* JSBridgeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSBridgeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F6396EF1CA8FB76000D846C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8F6396F11CA8FB76000D846C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,9 @@
 		8F63970F1CA8FB76000D846C /* JSBridgeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSBridgeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F6397131CA8FB76000D846C /* JSBridgeDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSBridgeDemoUITests.m; sourceTree = "<group>"; };
 		8F6397151CA8FB76000D846C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F6397211CA920F2000D846C /* ExampleApp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ExampleApp.html; sourceTree = "<group>"; };
+		CAB6F4FD99D50D042A85DF1C /* libPods-JSBridgeDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JSBridgeDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E605DE781EA2FDA50725F1A8 /* Pods-JSBridgeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSBridgeDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSBridgeDemo/Pods-JSBridgeDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD1AB09FCD2FBD19BFADE254 /* libPods-JSBridgeDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		192AE059515939CFD6DC2820 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E605DE781EA2FDA50725F1A8 /* Pods-JSBridgeDemo.debug.xcconfig */,
+				16328375C843FC9D7F57B2F3 /* Pods-JSBridgeDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8F6396E21CA8FB76000D846C = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +101,8 @@
 				8F6397071CA8FB76000D846C /* JSBridgeDemoTests */,
 				8F6397121CA8FB76000D846C /* JSBridgeDemoUITests */,
 				8F6396EC1CA8FB76000D846C /* Products */,
+				192AE059515939CFD6DC2820 /* Pods */,
+				F67870A1F1BF3EA8854EB1BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +119,7 @@
 		8F6396ED1CA8FB76000D846C /* JSBridgeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8F6397211CA920F2000D846C /* ExampleApp.html */,
 				8F6396F11CA8FB76000D846C /* AppDelegate.h */,
 				8F6396F21CA8FB76000D846C /* AppDelegate.m */,
 				8F6396F41CA8FB76000D846C /* ViewController.h */,
@@ -140,6 +159,14 @@
 			path = JSBridgeDemoUITests;
 			sourceTree = "<group>";
 		};
+		F67870A1F1BF3EA8854EB1BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAB6F4FD99D50D042A85DF1C /* libPods-JSBridgeDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F6397181CA8FB76000D846C /* Build configuration list for PBXNativeTarget "JSBridgeDemo" */;
 			buildPhases = (
+				63701B6351092F3F7B1BA7B9 /* Check Pods Manifest.lock */,
 				8F6396E71CA8FB76000D846C /* Sources */,
 				8F6396E81CA8FB76000D846C /* Frameworks */,
 				8F6396E91CA8FB76000D846C /* Resources */,
+				9DFDCF032658B8AD949C88CA /* Embed Pods Frameworks */,
+				8701234D1E192E4B22450C2A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +279,7 @@
 				8F6396FE1CA8FB76000D846C /* LaunchScreen.storyboard in Resources */,
 				8F6396FB1CA8FB76000D846C /* Assets.xcassets in Resources */,
 				8F6396F91CA8FB76000D846C /* Main.storyboard in Resources */,
+				8F6397221CA920F2000D846C /* ExampleApp.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +298,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63701B6351092F3F7B1BA7B9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8701234D1E192E4B22450C2A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSBridgeDemo/Pods-JSBridgeDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DFDCF032658B8AD949C88CA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSBridgeDemo/Pods-JSBridgeDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8F6396E71CA8FB76000D846C /* Sources */ = {
@@ -414,6 +493,7 @@
 		};
 		8F6397191CA8FB76000D846C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E605DE781EA2FDA50725F1A8 /* Pods-JSBridgeDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JSBridgeDemo/Info.plist;
@@ -425,6 +505,7 @@
 		};
 		8F63971A1CA8FB76000D846C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16328375C843FC9D7F57B2F3 /* Pods-JSBridgeDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JSBridgeDemo/Info.plist;
@@ -499,6 +580,7 @@
 				8F63971A1CA8FB76000D846C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F63971B1CA8FB76000D846C /* Build configuration list for PBXNativeTarget "JSBridgeDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +589,7 @@
 				8F63971D1CA8FB76000D846C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F63971E1CA8FB76000D846C /* Build configuration list for PBXNativeTarget "JSBridgeDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +598,7 @@
 				8F6397201CA8FB76000D846C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

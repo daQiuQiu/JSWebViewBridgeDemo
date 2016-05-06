@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import "WebViewJavascriptBridge.h"
+@interface ViewController : UIViewController<UIWebViewDelegate>
+@property (strong, nonatomic) IBOutlet UIWebView *myWeb;
+@property (strong, nonatomic) WebViewJavascriptBridge *bridge;
+- (IBAction)didCallJS:(UIButton *)sender;
+- (IBAction)reloadWeb:(UIButton *)sender;
 
 
 @end
